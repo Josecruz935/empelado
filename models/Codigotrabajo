@@ -1,0 +1,19 @@
+using System.ComponentModel.DataAnnotations;
+
+public class Codigotrabajo {
+[Key]
+public Guid CodigotrabajoId{get; set;}= Guid.NewGuid();
+
+[Required]
+public int antiguedad{get; set;}
+[Required]
+
+public int diasotorgados{get;set;} 
+[Required]
+
+public Boolean vigente{get;set;} 
+[Required]
+
+public Codigotrabajo listar{get;set;}
+
+}
